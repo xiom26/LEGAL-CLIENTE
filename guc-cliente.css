@@ -1,54 +1,208 @@
-/* ===== v1.0.4 — armonía de color y padding uniforme ===== */
-#guc-cliente.guc-wrap { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; color:#1f1f1f; }
-#guc-cliente .guc-header { display:flex; align-items:center; justify-content:space-between; padding:12px 16px; background:#eef1f4; border-radius:12px; margin:12px 0 18px; }
-#guc-cliente .guc-title { font-weight:800; font-size:20px; margin:0; color:#635447; }
-#guc-cliente .guc-subtitle { font-size:12px; color:#6b7280; }
+/* ===== v1.1.0 — LEGAL ENGINEERING visual refresh ===== */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@400;500;600&display=swap');
 
-/* Card con #f2f2f2 y borde armónico */
-#guc-cliente .guc-card { background:#f2f2f2; border:1px solid #d9d4cf; border-radius:12px; padding:18px; margin-bottom:22px; }
-#guc-cliente .guc-row { display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:10px; }
-#guc-cliente .guc-label { font-size:11px; color:#635447; text-transform:uppercase; letter-spacing:.04em; }
-#guc-cliente .guc-value { font-weight:600; color:#1f1f1f; }
+#guc-cliente.guc-wrap {
+  font-family: 'Montserrat', 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+  color: #2c1d25;
+  background: #f9f6f2;
+  padding: 8px;
+}
+
+#guc-cliente .guc-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 14px 18px;
+  background: linear-gradient(90deg, #68092b 0%, #42041a 100%);
+  border-radius: 14px;
+  margin: 14px 0 20px;
+  color: #fdf7ec;
+  box-shadow: 0 12px 24px -18px rgba(66, 4, 26, 0.45);
+}
+
+#guc-cliente .guc-title {
+  font-weight: 800;
+  font-size: 21px;
+  margin: 0;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+}
+
+#guc-cliente .guc-subtitle {
+  font-size: 13px;
+  color: #f0e3d1;
+  font-weight: 500;
+  text-align: right;
+}
+
+#guc-cliente .guc-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 10px;
+  background: #b29f59;
+  color: #1f120e;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: inset 0 0 0 1px #d2ae6d;
+}
+
+/* Card con paleta LEGAL ENGINEERING */
+#guc-cliente .guc-card {
+  background: #fffefc;
+  border: 1px solid #d2ae6d;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 22px;
+  box-shadow: 0 10px 28px -20px rgba(104, 9, 43, 0.3);
+}
+
+#guc-cliente .guc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 12px;
+}
+
+#guc-cliente .guc-label {
+  font-size: 11px;
+  color: #68092b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+#guc-cliente .guc-value {
+  font-weight: 700;
+  color: #2c1d25;
+  font-size: 15px;
+  margin-top: 4px;
+}
 
 /* Títulos de secciones */
-#guc-cliente .guc-block-title { font-weight:900; margin:22px 0 12px; color:#635447; }
-#guc-cliente .guc-accordion details { background:#faf7f2; border:1px solid #eadfce; border-radius:10px; margin-bottom:16px; }
-#guc-cliente .guc-accordion summary { cursor:pointer; padding:12px 16px; font-weight:900; color:#635447; list-style:none; }
-#guc-cliente .guc-accordion summary::-webkit-details-marker { display:none; }
+#guc-cliente .guc-block-title {
+  font-weight: 800;
+  margin: 24px 0 14px;
+  color: #42041a;
+  letter-spacing: 0.02em;
+}
 
-/* Sub-bloques con padding uniforme */
-#guc-cliente .guc-subblock { padding: 0 16px 18px; }
-#guc-cliente .guc-subtitle-2 { font-weight:800; margin:12px 0 10px; color:#635447; padding-left: 4px; }
+#guc-cliente .guc-accordion details {
+  background: #fdf7ec;
+  border: 1px solid #e7d8ae;
+  border-radius: 12px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px -18px rgba(66, 4, 26, 0.25);
+}
+
+#guc-cliente .guc-accordion summary {
+  cursor: pointer;
+  padding: 13px 16px;
+  font-weight: 800;
+  color: #68092b;
+  list-style: none;
+  background: #f6ecd7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#guc-cliente .guc-accordion summary::-webkit-details-marker { display: none; }
+
+#guc-cliente .guc-subblock { padding: 6px 16px 18px; }
+
+#guc-cliente .guc-subtitle-2 {
+  font-weight: 800;
+  margin: 14px 0 12px;
+  color: #42041a;
+  padding-left: 4px;
+  border-left: 4px solid #b29f59;
+}
 
 /* Tablas con contraste */
-#guc-cliente .guc-table-wrap { padding:0; }
-#guc-cliente table.guc-table { width:100%; border-collapse:collapse; background:#fff; border:1px solid #d9d4cf; border-radius:10px; overflow:hidden; }
-#guc-cliente table.guc-table thead th {
-  background:#635447; color:#fff; text-align:left; font-weight:800; padding:12px 16px;
-  border-bottom:1px solid #635447;
+#guc-cliente .guc-table-wrap { padding: 0; }
+
+#guc-cliente table.guc-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border: 1px solid #d2ae6d;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px -14px rgba(0, 0, 0, 0.35);
 }
-#guc-cliente table.guc-table td { padding:12px 16px; border-bottom:1px solid #eadfce; font-size:14px; }
-#guc-cliente table.guc-table tbody tr:nth-child(even) td { background:#faf7f2; }
-#guc-cliente table.guc-table tbody tr:last-child td { border-bottom:none; }
-#guc-cliente table.guc-table td:last-child { text-align:center; }
+
+#guc-cliente table.guc-table thead th {
+  background: #68092b;
+  color: #fff3dc;
+  text-align: left;
+  font-weight: 800;
+  padding: 12px 16px;
+  border-bottom: 1px solid #42041a;
+  letter-spacing: 0.01em;
+}
+
+#guc-cliente table.guc-table td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0e3d1;
+  font-size: 14px;
+}
+
+#guc-cliente table.guc-table tbody tr:nth-child(even) td { background: #fdf7ec; }
+#guc-cliente table.guc-table tbody tr:last-child td { border-bottom: none; }
+#guc-cliente table.guc-table td:last-child { text-align: center; }
 
 /* Botón de descarga */
 #guc-cliente .guc-icon-btn {
-  display:inline-flex; align-items:center; justify-content:center;
-  width:34px; height:34px; border-radius:10px; border:1px solid #635447;
-  background:#635447; text-decoration:none; outline:none; margin:0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  border: 1px solid #b29f59;
+  background: #68092b;
+  text-decoration: none;
+  outline: none;
+  margin: 0 auto;
   transition: transform .08s ease, background .15s ease, box-shadow .15s ease;
+  box-shadow: 0 4px 10px -6px rgba(66, 4, 26, 0.6);
 }
-#guc-cliente .guc-icon-btn svg { width:18px; height:18px; fill:#ffffff; display:block; }
-#guc-cliente .guc-icon-btn:hover { background:#746254; }
-#guc-cliente .guc-icon-btn:focus { box-shadow: 0 0 0 3px #bfa27b55; }
+
+#guc-cliente .guc-icon-btn svg { width: 18px; height: 18px; fill: #fff8ed; display: block; }
+#guc-cliente .guc-icon-btn:hover { background: #42041a; transform: translateY(-1px); }
+#guc-cliente .guc-icon-btn:focus { box-shadow: 0 0 0 4px rgba(178, 159, 89, 0.35); }
 
 /* Estados vacíos */
-#guc-cliente .guc-empty { color:#9ca3af; padding:12px 16px; font-style:italic; text-align:center; }
-#guc-cliente .guc-empty-state { display:flex; gap:10px; align-items:center; justify-content:center; padding:20px; border:1px dashed #f59e0b; background:#fffaf0; border-radius:12px; margin:12px 0; }
-#guc-cliente .guc-empty-state .guc-empty-icon { font-size:20px; }
-#guc-cliente .guc-empty-state .guc-empty-text { font-weight:600; color:#92400e; }
+#guc-cliente .guc-empty {
+  color: #8a6f74;
+  padding: 12px 16px;
+  font-style: italic;
+  text-align: center;
+}
+
+#guc-cliente .guc-empty-state {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px dashed #b29f59;
+  background: #fff9ef;
+  border-radius: 12px;
+  margin: 12px 0;
+}
+
+#guc-cliente .guc-empty-state .guc-empty-icon { font-size: 20px; }
+#guc-cliente .guc-empty-state .guc-empty-text { font-weight: 700; color: #42041a; }
 
 @media (max-width: 680px){
+  #guc-cliente .guc-header { flex-direction: column; align-items: flex-start; }
+  #guc-cliente .guc-subtitle { text-align: left; }
   #guc-cliente .guc-row { grid-template-columns: 1fr; }
+  #guc-cliente .guc-card { padding: 18px; }
 }

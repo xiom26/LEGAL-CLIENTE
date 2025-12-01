@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name: Gestión Clientes
- * Description: Lista el caso de acuerdo al cliente registrado
- * Version:     1.0.0
+ * Plugin Name: LEGAL ENGINEERING - Gestión de Clientes
+ * Description: Lista el caso de acuerdo al cliente registrado para LEGAL ENGINEERING
+ * Version:     1.1.0
  * Author:      Inecxus
  */
 if ( ! defined('ABSPATH') ) exit;
@@ -23,7 +23,7 @@ class GUC_Cliente_Plugin {
     }
 
     public function register_assets() {
-        $ver = '1.0.4';
+        $ver = '1.1.0';
         wp_register_style(self::SLUG, plugins_url('assets/guc-cliente.css', __FILE__), [], $ver);
         wp_register_script(self::SLUG, plugins_url('assets/guc-cliente.js', __FILE__), ['jquery'], $ver, true);
         wp_localize_script(self::SLUG, 'GUC_CLIENTE', [
@@ -42,8 +42,11 @@ class GUC_Cliente_Plugin {
         ob_start(); ?>
         <div id="guc-cliente" class="guc-wrap" data-ready="0">
             <div class="guc-header">
-                <h3 class="guc-title">Resultados de búsqueda</h3>
-                <div class="guc-subtitle">1 resultado encontrado</div>
+                <div>
+                    <h3 class="guc-title">LEGAL ENGINEERING</h3>
+                    <div class="guc-subtitle">Seguimiento personalizado de su caso</div>
+                </div>
+                <div class="guc-pill" aria-label="Resultados encontrados">1 resultado</div>
             </div>
             <div class="guc-card" id="guc-case-header">
                 <div class="guc-row">

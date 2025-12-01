@@ -24,7 +24,7 @@
   function showEmpty($wrap){
     var html = '<div class="guc-empty-state">'
              + '<span class="guc-empty-icon">⚠️</span>'
-             + '<span class="guc-empty-text">Su caso aun no ha sido registrado, por favor inténtelo más tarde.</span>'
+             + '<span class="guc-empty-text">Su caso aún no ha sido registrado por LEGAL ENGINEERING, por favor inténtelo más tarde.</span>'
              + '</div>';
     $wrap.html(html);
   }
