@@ -1,5 +1,12 @@
 (function($){
-  function fmtDate(d){ return d ? d : '—'; }
+  function fmtDate(d){
+    if(!d) return '—';
+    if(typeof d === 'string'){
+      var parts = d.split(/[T\s]/);
+      if(parts[0]) return parts[0];
+    }
+    return d;
+  }
   function downloadSvg(){
     return '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 011 1v9.586l2.293-2.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L11 13.586V4a1 1 0 011-1zm-7 16a1 1 0 011-1h12a1 1 0 110 2H6a1 1 0 01-1-1z"/></svg>';
   }

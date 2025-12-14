@@ -70,7 +70,7 @@ class GUC_Cliente_Plugin {
                     <div class="guc-table-wrap">
                         <table class="guc-table" id="tbl-pre">
                             <thead><tr>
-                                <th>Nro</th><th>Situación</th><th>Fecha y Hora</th><th>Motivo</th><th>Acciones</th>
+                                <th>Nro</th><th>Situación</th><th>Fecha</th><th>Motivo</th><th>Acciones</th>
                             </tr></thead>
                             <tbody></tbody>
                         </table>
@@ -85,7 +85,7 @@ class GUC_Cliente_Plugin {
                         <div class="guc-table-wrap">
                             <table class="guc-table" id="tbl-secretaria">
                                 <thead><tr>
-                                    <th>Nro</th><th>Situación</th><th>Fecha y Hora</th><th>Motivo</th><th>Acciones</th>
+                                    <th>Nro</th><th>Situación</th><th>Fecha</th><th>Motivo</th><th>Acciones</th>
                                 </tr></thead>
                                 <tbody></tbody>
                             </table>
@@ -97,7 +97,7 @@ class GUC_Cliente_Plugin {
                         <div class="guc-table-wrap">
                             <table class="guc-table" id="tbl-arbitral">
                                 <thead><tr>
-                                    <th>Nro</th><th>Situación</th><th>Fecha y Hora</th><th>Motivo</th><th>Acciones</th>
+                                    <th>Nro</th><th>Situación</th><th>Fecha</th><th>Motivo</th><th>Acciones</th>
                                 </tr></thead>
                                 <tbody></tbody>
                             </table>
